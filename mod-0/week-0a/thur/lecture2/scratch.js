@@ -21,9 +21,6 @@
 // // INVOKE THE FUNCTION \ CALLING THE FUNCTION
 // let anthony = "anthony";
 // let sam = "sam";
-// let joshua = "joshua";
-// let tina = "tina";
-// let may = "may";
 
 // sayHello(anthony) // <-- ARGUMENTS!!
 // sayHello(sam) // <-- ARGUMENTS!!
