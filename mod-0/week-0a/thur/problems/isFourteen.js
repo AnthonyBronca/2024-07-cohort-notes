@@ -10,7 +10,6 @@ HINT: We do not need to use `if` statements here, as we have not learned it yet
 */
 
 
-
 /* DO NOT WRITE BELOW THIS LINE */
 
 module.exports = { isFourteen }
