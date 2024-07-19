@@ -9,9 +9,6 @@ The function should return the sum of num1 and num2
 */
 
 
-
-
-
 /* DO NOT WRITE BELOW THIS LINE */
 
 module.exports = {twoSum}
