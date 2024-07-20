@@ -5,7 +5,6 @@
 What is the difference between a function's arguments and parameters?
 
 
-
 What would be the argument in this example?
 What would be the parameter?
 
