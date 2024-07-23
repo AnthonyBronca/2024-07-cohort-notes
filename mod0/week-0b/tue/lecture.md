@@ -26,7 +26,7 @@ Here is an example of iterating over a string to print each letter.
 
 let firstName = "anthony";
 
-
+// note the SEMICOLONS
 for(let i = 0; i < 5; i++){
     console.log(firstName);
 }
