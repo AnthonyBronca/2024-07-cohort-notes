@@ -104,3 +104,48 @@ console.log(myPets2); // "cats-dogs"
 
 
 ```
+
+
+
+
+## Mutability
+
+Mutability refers to the idea that something can be mutated. In programming, there are things we can mutate, and things we can not. A `String` can NOT be mutated. An `Array` can.
+
+Why?
+
+A string is a `Primative` data type, which is a collection characters. For example:
+
+```js
+let str = "abc";
+```
+
+is a collection of characters "a", "b", "c" meshed together into one string as "abc".
+
+if we have another string and then add "d" to it, it will not mutate the string or any other references pointing to "abc"
+
+```js
+let str2 = "abc";
+
+str2 += "d";
+
+console.log(str2)// "abcd";
+```
+
+Now it is important to note, that we are reassigning `str2` to a NEW string. We are reassigning the variable to a new primative value of "abcd" and not changing the primative value of "abc" to then become "abcd".
+
+`Array`s are mutable. This is because an `array` is a reference type, not a primative type. So we can change the reference as much as we want!
+
+this means we can reassign positions within our array:
+
+```js
+
+let arr = ["a","b","c"];
+
+arr[0] = "d"
+
+console.log(arr) // ["d","b","c]
+
+```
+
+We will dive more into this idea of mutability and primatives as we progress through the program.
