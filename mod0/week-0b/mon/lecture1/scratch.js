@@ -104,6 +104,7 @@ function rps(selection, computerSelection){
     }
 }
 
+
 console.log(computerSelection, "this is computer selection")
 
 rps("rock", computerSelection)

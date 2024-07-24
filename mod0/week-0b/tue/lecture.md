@@ -39,27 +39,37 @@ We can use this to print "anthony" 5 times. Let's walk through the action of thi
 2. is i (0) smaller than 5? - true
 3. console.log the name
 4. increase i by 1 (i is now 1)
+
 ---- LOOP ----
+
 1. i is set to 1
 2. is i (1) smaller than 5? - true
 3. console.log the name
 4. increase i by 1 (i is now 2)
+
 ---- LOOP ----
+
 1. i is set to 2
 2. is i (2) smaller than 5? - true
 3. console.log the name
 4. increase i by 1 (i is now 3)
+
 ---- LOOP ----
+
 1. i is set to 3
 2. is i (3) smaller than 5? - true
 3. console.log the name
 4. increase i by 1 (i is now 4)
+
 ---- LOOP ----
+
 1. i is set to 4
 2. is i (4) smaller than 5? - true
 3. console.log the name
 4. increase i by 1 (i is now 5)
+
 ---- LOOP ----
+
 1. i is set to 5
 2. is i (5) smaller than 5? - FALSE
 
