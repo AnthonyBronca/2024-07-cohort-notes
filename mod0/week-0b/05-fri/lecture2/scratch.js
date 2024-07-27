@@ -1,25 +1,34 @@
 
-let arr1 = ["a", "b", "c"];
+// //          0    1    2    3    4    5    6
+// let arr = ["a", "b", "c", "d", "e", "f", "g"];
 
-let copyArr1 = arr1.slice();
-
-copyArr1.push("d");
-
-console.log(arr1) // ["a","b","c"]
-console.log(copyArr1) // ["a","b","c","d"]
+// // idk -> ["a","b", "c", "d", "e" "f", "g"]
 
 
-
-let arr2 = ["hello", "how", "are", "you"];
-
-let copyArr2 = arr2.slice(2, 3);
-
-console.log(arr2); // [ 'hello', 'how', 'are', 'you' ]
-console.log(copyArr2); // [ 'are' ]
+// let idk = arr.slice(0);
 
 
-let arr3 = ["the", "cat", "ran", "up", "the", "wall", "to", "catch", "a", "mouse"];
-let copyArr3 = arr3.slice(2);
+// console.log(arr);
+// console.log(idk)
 
-console.log(arr3); //['the', 'cat','ran','up', 'the', 'wall', 'to', 'catch', 'a', 'mouse']
-console.log(copyArr3); //['ran', 'up','the', 'wall','to', 'catch','a', 'mouse']
+
+
+// let arr = ["a", "b", "c"];
+// arr.splice(1,0, "hello", "how", "are", "you");
+
+// console.log(arr);
+
+
+// // ["carrot", "sam", "mushrooms"]
+
+// let veggies = ["carrot", "sam", "mushrooms"];
+
+// veggies.splice(1,2, "sam");
+// console.log(veggies)
+
+//   0    1    2
+// let arr = ["a", "b", "c", "c"];
+// console.log(arr[1]) // indexing
+
+// let idk = arr.indexOf("c");
+// console.log(idk);
