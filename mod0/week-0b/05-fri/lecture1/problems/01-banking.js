@@ -20,13 +20,6 @@ let balanceDue = ["zaviar"];
 
 
 
-
-
-
-
-
-
-
 /*   DUE NOT WRITE BELOW THIS LINE */
 module.exports = {
     paid,
