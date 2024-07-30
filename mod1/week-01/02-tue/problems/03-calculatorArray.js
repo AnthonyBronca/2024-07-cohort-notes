@@ -7,7 +7,7 @@ This function should be able to go through the entire "nums" array and perform t
 
 If a non-valid operation is provided to the function, the function should return "Did not pass in a valid operation."
 
-If a non-valid number is passed in, skip to the next element of the array and continue performing the operation.
+While going through the "nums" array, if you run into a non-valid number (boolean, null, string, etc.), skip to the next element of the array and continue performing the operation.
 
 If no valid numbers are provided in the "nums" array, the function should return "Did not pass in any valid nums."
 */
@@ -31,7 +31,7 @@ If no valid numbers are provided in the "nums" array, the function should return
 // console.log(calculatorArray([5, 3, 7], "multiplication"));        // 8
 // console.log(calculatorArray(["9", "8", 2], "multiplication"));    // 2
 // console.log(calculatorArray([1, 2, 3, 4], "modulo"));             // Did not pass in a valid operation.
-console.log(calculatorArray(['1', '2', '3', '4'], "addition"));   // Did not pass in any valid nums.
+// console.log(calculatorArray(['1', '2', '3', '4'], "addition"));   // Did not pass in any valid nums.
 
 
 /* DO NOT MODIFY ANYTHING BELOW THIS LINE */
