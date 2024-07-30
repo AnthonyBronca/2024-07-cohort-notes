@@ -17,13 +17,9 @@ If no valid numbers are provided in the "nums" array, the function should return
 
 
 
-
-
-
-
 /* ----------------- COMMENT THESE OUT WHEN YOU ARE TO TEST OUT YOUR TEST SPECS FOR A CLEANER TEST ----------------- */
 // console.log(calculatorArray([1, 6, true, -12], "addition"));      // -5
-// console.log(calculatorArray([1, "9", 13], "addition"));           // 14      
+// console.log(calculatorArray([1, "9", 13], "addition"));           // 14
 // console.log(calculatorArray([19, -33, 7], "subtraction"));        // 45
 // console.log(calculatorArray(["0", "9", 10, 5, 2], "division"));   // 1
 // console.log(calculatorArray([0, 10, 99], "division"));            // 0
@@ -31,7 +27,7 @@ If no valid numbers are provided in the "nums" array, the function should return
 // console.log(calculatorArray([5, 3, 7], "multiplication"));        // 8
 // console.log(calculatorArray(["9", "8", 2], "multiplication"));    // 2
 // console.log(calculatorArray([1, 2, 3, 4], "modulo"));             // Did not pass in a valid operation.
-console.log(calculatorArray(['1', '2', '3', '4'], "addition"));   // Did not pass in any valid nums.
+// console.log(calculatorArray(['1', '2', '3', '4'], "addition"));   // Did not pass in any valid nums.
 
 
 /* DO NOT MODIFY ANYTHING BELOW THIS LINE */
