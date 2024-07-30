@@ -16,22 +16,6 @@ Example2: passing in "shy" should return -> [-1]
 
 // Type code here
 
-function getIndexOfVowels(str){
-    let res = [];
-    let vowels = "aeiou"
-    for(let i = 0; i < str.length; i++){
-        if(vowels.includes(str[i].toLowerCase())){
-            res.push(i);
-        }
-    }
-    if(res.length === 0){
-        res.push(-1)
-    };
-    return res
-}
-
-
-
 
 
 console.log(getIndexOfVowels("pizza")); // [1,4]
