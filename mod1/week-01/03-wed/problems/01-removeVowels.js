@@ -22,12 +22,12 @@ Try to solve this in 2 ways. One way will be by working with just a string, The 
 
 */
 
+// YOUR CODE HERE
 
 
-
-removeVowels("hello"); // "hll"
-removeVowels("GOOD bye"); // "GD by"
-removeVowels("TRY"); // "TRY"
+console.log(removeVowels("hello")); // "hll"
+console.log(removeVowels("GOOD bye")); // "GD by"
+console.log(removeVowels("TRY")); // "TRY"
 
 
 
