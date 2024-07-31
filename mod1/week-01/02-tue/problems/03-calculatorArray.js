@@ -17,13 +17,9 @@ If no valid numbers are provided in the "nums" array, the function should return
 
 
 
-
-
-
-
 /* ----------------- COMMENT THESE OUT WHEN YOU ARE TO TEST OUT YOUR TEST SPECS FOR A CLEANER TEST ----------------- */
 // console.log(calculatorArray([1, 6, true, -12], "addition"));      // -5
-// console.log(calculatorArray([1, "9", 13], "addition"));           // 14      
+// console.log(calculatorArray([1, "9", 13], "addition"));           // 14
 // console.log(calculatorArray([19, -33, 7], "subtraction"));        // 45
 // console.log(calculatorArray(["0", "9", 10, 5, 2], "division"));   // 1
 // console.log(calculatorArray([0, 10, 99], "division"));            // 0
