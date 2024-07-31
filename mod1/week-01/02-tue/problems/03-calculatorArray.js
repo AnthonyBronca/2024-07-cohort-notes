@@ -47,7 +47,6 @@ function calculatorArray(nums, operation) {
 
 	return result;
 }
-
 /* ----------------- COMMENT THESE OUT WHEN YOU ARE TO TEST OUT YOUR TEST SPECS FOR A CLEANER TEST ----------------- */
 // console.log(calculatorArray([1, 6, true, -12], "addition"));      // -5
 // console.log(calculatorArray([1, "9", 13], "addition"));           // 14
@@ -59,6 +58,7 @@ function calculatorArray(nums, operation) {
 // console.log(calculatorArray(["9", "8", 2], "multiplication"));    // 2
 // console.log(calculatorArray([1, 2, 3, 4], "modulo"));             // Did not pass in a valid operation.
 console.log(calculatorArray(["1", "2", "3", "4"], "addition")); // Did not pass in any valid nums.
+
 
 /* DO NOT MODIFY ANYTHING BELOW THIS LINE */
 module.exports = { calculatorArray };

@@ -17,17 +17,6 @@ Your Polyas here:
 
 // Your code here
 
-function userData(arr, name){
-    let copy = arr.slice();
-    let indexName = copy.indexOf(name);
-    if(indexName >= 0){
-        copy.splice(indexName, 1);
-        return copy;
-    } else{
-        return indexName
-    }
-
-}
 
 /* DO NOT MODIFY ANYTHING BELOW THIS LINE */
 
