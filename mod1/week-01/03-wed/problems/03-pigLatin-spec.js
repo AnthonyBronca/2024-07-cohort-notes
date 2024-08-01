@@ -14,7 +14,29 @@ You can assume that all characters (if provided) will be in lowercase and an Eng
 
 
 /* WRITE YOUR FUNCTION HERE*/
+function pigLatin(str) {      
+	let vowels = "aeiou";
 
+	if (vowels.includes(str[0])) {
+		if (str[str.length - 1] === "y") {
+			return str + "ay";
+		}
+		return str + "yay";
+	}
+
+      for(let i = 0; i < str.length; i++) {
+            let currLetter = str[i]
+
+            if(vowels.includes(currLetter)) {
+                  let firstPart = str.slice(i)
+                  let secondPart = str.slice(0, i)
+
+                  return firstPart + secondPart + "ay"
+            }
+      }
+
+      return str + "ay"
+}
 
 
 /* ----------------- COMMENT THESE OUT WHEN YOU ARE TO TEST OUT YOUR TEST SPECS FOR A CLEANER TEST ----------------- */

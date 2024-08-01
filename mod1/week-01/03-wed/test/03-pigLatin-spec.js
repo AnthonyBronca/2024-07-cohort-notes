@@ -3,7 +3,7 @@ const expect = chai.expect;
 
 let pigLatin
 try {
-      pigLatin = require("../problems/03-pigLatin").pigLatin
+      pigLatin = require("../problems/03-pigLatin-spec").pigLatin
 } catch(e) {
       console.log("Error: Function pigLatin is not defined yet")
 }
