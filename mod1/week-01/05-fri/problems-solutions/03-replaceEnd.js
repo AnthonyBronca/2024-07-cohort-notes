@@ -14,7 +14,28 @@ There are two ways to solve this. Try to think of array methods you can use to a
 
 */
 
+function replaceEnd(arr, newWord){
 
+    if(newWord === undefined){
+        return "A string replacement argument must be passed in.";
+    } else{
+        if(arr.length === 0){
+            arr.push(newWord);
+            return arr.join(" ");
+        } else{
+            // version 1 - splice
+            // arr.splice(arr.length - 1, 1, newWord);
+            // return arr.join(" ");
+
+            // version 2 - pop and then push
+            arr.pop();
+            arr.push(newWord);
+            return arr.join(" ")
+        }
+    }
+
+
+}
 
 
 

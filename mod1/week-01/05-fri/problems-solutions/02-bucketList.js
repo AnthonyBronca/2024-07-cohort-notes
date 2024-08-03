@@ -8,6 +8,21 @@ Try to solve this in 2 ways. One can use the .includes() method, but the other s
 */
 
 
+function isInBucketList(countries, targetCountry){
+    return countries.includes(targetCountry)
+}
+
+
+
+function isInBucketList(countries, targetCountry){
+    for(let country of countries){
+        if(country === targetCountry){
+            return true;
+        }
+    }
+    return false
+}
+
 
 let countries = ["Unites States", "England", "France", "Spain", "Japan", "Italy", "Brazil", "Mexico", "Canada", "Russia"];
 
