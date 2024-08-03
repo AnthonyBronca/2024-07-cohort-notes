@@ -9,12 +9,6 @@ Try to solve this in 2 ways. One can use the .includes() method, but the other s
 
 
 
-
-
-
-
-
-
 let countries = ["Unites States", "England", "France", "Spain", "Japan", "Italy", "Brazil", "Mexico", "Canada", "Russia"];
 
 console.log(isInBucketList(countries, "England")); // true

@@ -9,9 +9,9 @@ Return an array of arrays, where the subarray tells us the index of the subarray
 Example:
 
 let arr = [
-    [0,1,0],
-    [0,0,1],
-    [1,0,0,]
+    [0,1,0], 0
+    [0,0,1], 1
+    [1,0,0,] 2
 ]
 
 
@@ -21,7 +21,10 @@ Another 1 was found in subarray at index 1. Within that subarray, the 1 was foun
 Another 1 was found in aubarray at index 2. Within that subarray, the 1 was found at index 9. hence: [2,0]
 
 
+
+
 */
+
 
 
 let circutBoard = [
