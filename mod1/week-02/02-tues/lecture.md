@@ -10,6 +10,9 @@ TLDR:
 
 - Assessment this weekend. Assessment releases on Friday at 12:00am PST (3:00am EST). You will have until 11:59PM PST on Sunday (2:59AM EST Monday) to complete this assessment. You have unlimited attempts to get the solution and we need an overall 80% across the tests in Mod 1 (there are 3 tests). Aim to pass with an 80% minimum on this assessment
 
+- Practice assessment should be released. I will try and do a walk through of this on Thur. Please reach out to the
+tech support if you do not have access
+
 
 ## Content
 
