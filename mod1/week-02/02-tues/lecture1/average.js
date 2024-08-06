@@ -13,6 +13,13 @@ explanation ->  1 + 2+ 3 = 6
 6 / 3 -> 2
 
 
+
+Try to solve this using:
+
+1. A for loop
+2. A while loo
+3. A for of loop
+
 */
 
 
