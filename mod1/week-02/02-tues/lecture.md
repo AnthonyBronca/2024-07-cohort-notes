@@ -63,3 +63,23 @@ for(let i = 0; i < 7; i++){
 }
 
 ```
+
+
+### While loop (recap)
+
+While loops are built the exact same way, but they look more vertical. Here is us looping 5 times
+
+```js
+
+let i = 0
+while(i < 5){
+    console.log("hi");
+    i++
+}
+
+// start -> i = 0
+// end -> i becomes 5 or greater
+// action -> console.log hi, and increment i
+// step -> the step is the incrementation phase
+
+```
