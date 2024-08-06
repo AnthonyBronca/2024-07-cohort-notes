@@ -15,35 +15,6 @@ If no valid numbers are provided in the "nums" array, the function should return
 /* WRITE YOUR FUNCTION HERE*/
 
 function calculatorArray(nums, operation) {
-      let startingIndex = 0;
-
-      while(typeof nums[startingIndex] !== "number" && startingIndex < nums.length) {
-            startingIndex++ 
-      }
-      
-      if(startingIndex === nums.length) {
-            return "Did not pass in any valid nums."
-      }
-
-	let result = nums[startingIndex];
-
-	for (let i = startingIndex + 1; i < nums.length; i++) {
-		let currNum = nums[i];
-
-		if (typeof currNum === "number") {
-			if (operation === "subtraction") {
-				result -= currNum;
-			} else if (operation === "addition") {
-				result += currNum;
-			} else if (operation === "multiplication") {
-				result *= currNum;
-			} else if (operation === "division") {
-				result /= currNum;
-			} else {
-				return "Did not pass in a valid operation.";
-			}
-		}
-	}
 	let startingIndex = 0;
 
 	while (typeof nums[startingIndex] !== "number" && startingIndex < nums.length) {
@@ -88,8 +59,6 @@ function calculatorArray(nums, operation) {
 // console.log(calculatorArray([1, 2, 3, 4], "modulo"));             // Did not pass in a valid operation.
 console.log(calculatorArray(["1", "2", "3", "4"], "addition")); // Did not pass in any valid nums.
 
-	return result;
-}
 
 /* ----------------- COMMENT THESE OUT WHEN YOU ARE TO TEST OUT YOUR TEST SPECS FOR A CLEANER TEST ----------------- */
 // console.log(calculatorArray([1, 6, true, -12], "addition"));               // -5
