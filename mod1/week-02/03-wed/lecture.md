@@ -42,3 +42,56 @@ let arr = ["A", "B", "C", "D"];
 // arr[3] ->  D
 
 ```
+
+
+
+### Array methods to know
+
+#### pop
+
+`.pop()` is a function we can use to remove from the back of an array. It returns the item that was removed.
+
+#### shift
+
+`.shift()` is a function we can use to remove from the front of an array. It returns the item that was removed.
+
+#### push
+
+`.push()` is a function we can use to add to the back of an array. It returns the new length of the array.
+
+#### unshift
+
+`.unshift()` is a function we can use to add to the front of an array. It returns the new length of the array,
+
+
+#### splice
+
+`.splice()` is a function we can use to modify an array. We can use it to remove items from anywhere within the array, or add to anywhere in the array
+
+#### slice
+
+`.slice()` is a function that we can use to make a copy of an array or a subsection of an array.
+
+#### indexOf
+
+`.indexOf()` is a function we can use to search for an element within the array and get the index it was found at. If it was not found, it returns -1
+
+#### includes
+
+`.includes()` is a function we can use to see if the array has a specified element. It will return `true` or `false` if the item was found or not
+
+#### join
+
+`.join()` is a function we can use to combine the elements of an array into a string. It can take a delimiter to specify how they will be joined.
+
+Example:
+
+```js
+let sentence = ["hello", "how", "are", "you"];
+
+console.log(sentence.join("")); // "hellohowareyou"
+console.log(sentence.join(" ")); // "hello how are you"
+console.log(sentence.join("-")); // "hello-how-are-you"
+console.log(sentence.join("<3")); // "hello<3how<3are<3you"
+
+```
