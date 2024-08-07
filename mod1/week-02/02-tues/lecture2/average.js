@@ -27,4 +27,4 @@ let nums = [5,7,1,22,33,77,23,22,100,23];
 let nums2 = [3,55,6,14];
 
 console.log(getAverage(nums)); // 31.3
-console.log(getAverage(nums2)); // 19.5
+// console.log(getAverage(nums2)); // 19.5
