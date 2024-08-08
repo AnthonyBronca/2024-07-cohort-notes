@@ -7,6 +7,11 @@ Write a function called getThird. It will take an array and console.log the elem
 
 
 
+function getThird(arr){
+    console.log(arr[3])
+}
+
+
 
 let arr1 = ["a", "b", "c", "d"];
 let arr2 = ["anthony", "sam", "edward", "gabe"];

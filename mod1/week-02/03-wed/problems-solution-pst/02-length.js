@@ -6,7 +6,9 @@ Write a function called getLengths that will take an array and return the size o
 */
 
 
-
+function getLengths(arr){
+    return arr.length;
+}
 
 
 

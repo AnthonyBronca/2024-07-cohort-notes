@@ -6,7 +6,10 @@ The function should return the modified array
 */
 
 
-
+function addToFront(arr, el){
+    let output = arr.unshift(el);
+    return arr;
+}
 
 
 

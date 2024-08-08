@@ -6,6 +6,11 @@ The function should return the modified array
 */
 
 
+function removeFromFront(arr){
+    arr.shift();
+    return arr;
+}
+
 
 
 

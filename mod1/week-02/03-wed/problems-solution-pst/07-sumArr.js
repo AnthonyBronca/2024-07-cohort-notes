@@ -5,6 +5,43 @@ Write a function called sumArr that will take an array of numbers and return the
 */
 
 
+// function sumArr(arr){
+//     let sum = 0;
+//     for(let i = 0; i < arr.length; i++){
+//         let el = arr[i];
+//         sum += el
+//     }
+//     return sum;
+// }
+
+// function sumArr(arr){
+//     let i = 0;
+//     let sum = 0;
+//     while (i < arr.length){ // <--- condition?
+//         let el = arr[i];
+//         sum += el;
+//         i++;
+//     }
+//     return sum;
+// }
+
+// for...of
+function sumArr(arr){
+    let sum = 0;
+    for(let el of arr){
+        sum += el;
+    }
+    return sum;
+}
+
+function sumArr(arr){
+    let sum = 0;
+    for(let i = 0; i < arr.length; i++){
+        let el = arr[i];
+        sum += el
+    }
+    return sum;
+}
 
 
 let arr1 = [1,2,3];

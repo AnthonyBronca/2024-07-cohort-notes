@@ -5,6 +5,11 @@ The function should return the modified array
 
 */
 
+function removeFromFront(arr){
+    let output = arr.shift();
+    return arr;
+}
+
 
 
 

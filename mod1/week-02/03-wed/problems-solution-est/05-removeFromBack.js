@@ -5,6 +5,11 @@ The function should return the modified array
 
 */
 
+function removeFromBack(arr){
+    let output = arr.pop();
+    return arr;
+}
+
 
 
 

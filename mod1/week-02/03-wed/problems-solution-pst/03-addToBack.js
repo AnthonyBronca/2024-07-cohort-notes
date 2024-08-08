@@ -5,6 +5,10 @@ The function should return the modified array
 
 */
 
+function addToBack(arr, el){
+    let output = arr.push(el);
+    return arr;
+}
 
 
 
