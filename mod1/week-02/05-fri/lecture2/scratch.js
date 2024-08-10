@@ -21,11 +21,29 @@ Explanation:
 
 let colors = ["red", "white", "blue"];
 
+// helper func
+function isInColors(colorToCheck){
+    return colors.includes(colorToCheck);
+}
 
 
+// main func
+function colorsInColors(arrOfColors, myFunc){
+    let res = [];
+    for(let color of arrOfColors){
+        if(myFunc(color)){
+            if(!res.includes(color)){
+                res.push(color);
+            }
+        }
+    }
+    return res;
+}
 
 
 
 // DO NOT DELETE THIS TEST
 let test1 = ["orange", "green", "blue", "white", "yellow", "black", "blue", "orange", "green"];
+console.log(colorsInColors(test1, isInColors))
+// console.log(isInColors("white", test1))
 // ["blue", "white"]

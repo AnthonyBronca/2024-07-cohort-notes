@@ -22,10 +22,29 @@ Explanation:
 let colors = ["red", "white", "blue"];
 
 
+function isPartOfArr(arr, item){
+    return arr.includes(item);
+}
+
+function getGoodColors(testColors, myIncludes){
+    let res = [];
+    for(let color of testColors){
+        if(myIncludes(colors, color)){
+            if(!myIncludes(res, color)){
+                res.push(color);
+            }
+        }
+    }
+    return res;
+}
+
+
+// console.log(isPartOfArr(["red", "white", "blue"], "orange"))
 
 
 
 
 // DO NOT DELETE THIS TEST
 let test1 = ["orange", "green", "blue", "white", "yellow", "black", "blue", "orange", "green"];
+console.log(getGoodColors(test1, isPartOfArr))
 // ["blue", "white"]
