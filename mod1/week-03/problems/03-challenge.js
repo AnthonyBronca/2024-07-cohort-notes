@@ -11,13 +11,6 @@ The function should return 0 if there are no even numbers to add
 */
 
 
-const addEvens = (numsArr) => {
-    let sum = 0;
-    for(let num of numsArr){
-        num % 2 === 0 ? sum += num: false;
-    }
-    return sum;
-}
 
 console.log(addEvens([1,2,3,4])); // 6
 console.log(addEvens([2,2,2])); // 6
