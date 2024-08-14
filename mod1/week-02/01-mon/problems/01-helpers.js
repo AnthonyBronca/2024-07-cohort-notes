@@ -12,7 +12,9 @@ HINT: You can maybe check for the type of the return
 
 */
 
-
+function checkExists(str, helperfunc){
+    return helperfunc(str);
+}
 
 
 // do not modify this helper function
@@ -28,7 +30,7 @@ function myIncludes(str){
         "Kait"
     ];
 
-    if(typeof str !== str){
+    if(typeof str !== "string"){
         return "You did not pass in a valid string";
     } else{
         return vipList.includes(str);
@@ -37,8 +39,8 @@ function myIncludes(str){
 
 
 
-console.log(checkExists("Anthony")); // true
-console.log(checkExists("Sam")); // true
-console.log(checkExists("Cait")); // false
-console.log(checkExists("Edward")); // false
-console.log(checkExists(1)); // "You did not pass in a valid string"
+console.log(checkExists("Anthony", myIncludes)); // true
+console.log(checkExists("Sam", myIncludes)); // true
+console.log(checkExists("Cait", myIncludes)); // false
+console.log(checkExists("Edward", myIncludes)); // false
+console.log(checkExists(1, myIncludes)); // "You did not pass in a valid string"

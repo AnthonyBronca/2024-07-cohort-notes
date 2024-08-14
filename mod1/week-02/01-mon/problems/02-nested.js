@@ -1,7 +1,8 @@
 /*
 
 
-Write a function called repeatedMath. It will take in a number to do math on, a number of times to do the math, and a helper function.
+Write a function called repeatedMath. It will take in a number to do math on, a number of times to do the math,
+and a helper function.
 Example:
 
 Passing in 2, 3, addFive will do the following
@@ -15,6 +16,14 @@ Pass 2 into addFive 3 times. We should return the result of all these changes.
 
 
 // Your code here
+
+function repeatedMath(num, times, func){
+    let res = 0;
+    for(let i = 0; i < times; i++){
+        res += func(num);
+    }
+    return res;
+}
 
 
 
