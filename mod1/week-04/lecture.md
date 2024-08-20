@@ -25,7 +25,6 @@ const arr =  [1,2,3];
 arr.forEach((el) => console.log(el)); // prints: 1 2 3
 
 
-
 ```
 
 
