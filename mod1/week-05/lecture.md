@@ -12,6 +12,7 @@ In JavaScript, we know that there is `true` and `false`, and there are condition
 ```js
 
 let num = 5;
+
 if(num > 0){
     // some action
 } else{
