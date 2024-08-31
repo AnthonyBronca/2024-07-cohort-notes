@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "ascii-fireworks": "^1.0.4",
+    "getrandomjs": "^2.0.1"
+  }
+}
