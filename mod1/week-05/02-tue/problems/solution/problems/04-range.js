@@ -11,10 +11,23 @@ range(7, 6); // []
 ***********************************************************************/
 
 
-function range(start, end) {
-  // Your code here 
+// function range(start, end){
+//   if(start >= end) return [];
+//   return [start, ...range(start + 1, end)];
+// }
+
+
+function range(start, end, res = []){
+  if(start >= end) return res;
+  res.push(start);
+  return range(start + 1, end, res);
 }
 
+
+
+console.log(range(1, 5)); // [1, 2, 3, 4]
+// console.log(range(3, 4)); // [3]
+// console.log(range(7, 6)); // []
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 try {
