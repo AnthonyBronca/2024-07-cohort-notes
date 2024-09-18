@@ -1,0 +1,16 @@
+{
+  "name": "lecture1",
+  "version": "1.0.0",
+  "main": "scratch.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "chai": "^4.3.0",
+    "mocha": "^10.7.3"
+  }
+}
