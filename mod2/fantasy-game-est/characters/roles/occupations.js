@@ -1,3 +1,4 @@
+const levelChart = require("./levelChart")
 
 
 class Occupation {
@@ -6,12 +7,27 @@ class Occupation {
         this.pay = pay;
         this.listOfResponbilities = listOfResponbilities;
         this.currentXp = currentXp;
+        this.level = 1;
     }
 
     // functionality
     makeMoney(salary){
         this.pay += salary;
     }
+
+    levelUp(){
+        this.level ++;
+    }
+
+    // xpGathered -> 200
+    xpGainer(xpGathered){
+        this.currentXp += xpGathered
+        //     200                  150
+        if(this.currentXp >= levelChart[this.level + 1]){
+            this.levelUp();
+        }
+    }
+
 
 
 
