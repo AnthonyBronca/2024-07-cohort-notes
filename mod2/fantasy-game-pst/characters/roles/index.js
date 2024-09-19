@@ -2,11 +2,11 @@
 const levelXpRequirements = require('./levels');
 
 class Role {
-    constructor(title, skill, level = 1, xp = 1){
+    constructor(title, skill){
         this.title = title;
         this.skill = skill;
-        this.level = level;
-        this.xp = xp;
+        this.level = 1;
+        this.xp = 1;
     }
 
     xpIncrease(xpReward){
