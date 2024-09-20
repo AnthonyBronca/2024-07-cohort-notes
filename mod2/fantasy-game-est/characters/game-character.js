@@ -11,6 +11,7 @@ class Character {
         this.occupations = occupations;
         this.level = 1;
         this.currentXp = 1;
+        this.health = 10
         this.equipment = {
             head: null,
             body: "shirt",
@@ -21,6 +22,8 @@ class Character {
             offHand: null,
             back: null
         }
+
+        this.combat = null;
     }
 
     addGear(gear) {
@@ -28,7 +31,7 @@ class Character {
             // check if we have the level required to wear the gear
             if(gear.levelRequirement < this.level){
                 // error message
-                throw new TypeError("You're too weak")
+                // throw new TypeError("You're too weak")
             } else{
                 this.equipment.head = gear;
             }
@@ -46,6 +49,7 @@ class Character {
 
     levelUp() {
         this.level++;
+        this.health += 10;
     }
 
     xpGainer(xpGathered) {
@@ -60,9 +64,12 @@ class Character {
 }
 
 const anthony = new Character("Anthony", [evil]);
+const sam = new Character("Sam", [gatherer]);
+
+
 
 anthony.login();
-
+sam.login();
 // console.log(anthony)
 
 
@@ -78,11 +85,15 @@ anthony.occupations[0].xpGainer(100);
 
 anthony.xpGainer(200);
 
-anthony.addGear(juggernautHelmet)
+anthony.occupations[0].levelUp();
+// anthony.addGear(juggernautHelmet)
 anthony.addGear(steelPlatedHelmet)
 
 
 
-// anthony.occupations[0].levelUp();
 
-console.log(anthony)
+
+
+// console.log(anthony)
+
+module.exports = {anthony, sam};

@@ -10,6 +10,7 @@ class Character {
         this.role = role; // this is the Role class
         this.level = 1;
         this.xp = 1;
+        this.health = 10;
         this.equipment = {
             head: null,
             torso: "shirt",
@@ -37,6 +38,7 @@ class Character {
 
     levelUp() {
         this.level++;
+        this.health += 10;
     }
 
     checkGearLevelRequirements(gear){
@@ -84,3 +86,5 @@ stephanie.levelUp();
 stephanie.addGear(headBandOfTheOwl)
 stephanie.addGear(glovesOfTheFallenChampion)
 console.log(stephanie)
+
+module.exports = {anthony, stephanie};

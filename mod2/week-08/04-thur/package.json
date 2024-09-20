@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "chai": "^4.3.0",
+    "getrandomjs": "^2.0.1"
+  },
+  "name": "04-thur",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
