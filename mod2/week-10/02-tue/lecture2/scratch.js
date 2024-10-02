@@ -6,65 +6,64 @@ class Node {
     }
 }
 
-
-class LinkedList {
+class LinkedList{
     constructor(){
-        this.head = null; // 1bit
+        this.head = null; // 1 bit
         this.length = 0;
-        this.tail = null; // 1bit
+        this.tail = null; // 1 bit
     }
 
+    // time complexity?  O(1)
     addToHead(node){
         if(this.length === 0){
             this.head = node;
             this.tail = node;
-        } else {
+        } else{
+            // update the new node to point to old front
             node.next = this.head;
             this.head = node;
+
         }
         this.length++;
     }
 
+    // ADding to tail time complexity: 1
+    // enqueue
     addToTail(node){
         this.tail.next = node;
         this.tail = node;
         this.length++;
-
     }
 
-    // dequeue -> shift()
-    removeFromHead(){
-        if(this.length === 0){
-            return;
-        } else{
-            let oldHead = this.head;
-            this.head = this.head.next;
-            oldHead.next = null;
-            this.length --;
-        }
-
-    }
-
-
+    // Time Complexity with tail pointer? O(1)
     findTail(){
         console.log(this.tail);
     }
 
+    // dequeue
+    removeFromHead(){
+        let oldHead = this.head; // pointer - pink
+        this.head = this.head.next; // update head
+        oldHead.next = null; // detaches nodes
+        this.length --;
+
+    }
+
+    // // Time Complexity: O(n)
     // findTail(){
-    //     // O(n) -> iterate through every node to find the ending
     //     if(this.length <= 1){
-    //         console.log(this.head);
-    //     } else{
+    //         console.log(this.head)
+    //     } else {
     //         let curr = this.head;
     //         while(curr.next){
-    //             curr = curr.next
+    //             curr = curr.next;
     //         }
     //         console.log(curr);
     //     }
     // }
+
 }
 
-const LL = new LinkedList();
 
 
 const one = new Node(1);
@@ -73,21 +72,19 @@ const three = new Node(3);
 const four = new Node(4);
 const five = new Node(5);
 
+const LL = new LinkedList();
 LL.addToHead(four);
 LL.addToHead(three);
 LL.addToHead(two);
 LL.addToHead(one);
+// 1 -> 2 -> 3 -> 4
 // console.log(LL);
 // LL.findTail();
 LL.addToTail(five);
 // LL.findTail();
-LL.removeFromHead();
-LL.removeFromHead();
-LL.removeFromHead();
-LL.removeFromHead();
-LL.removeFromHead();
+
+console.log(LL);
 LL.removeFromHead();
 console.log(LL);
 
-//  here
-//    1 -> 2 - > 3 -> 4 -> null
+// console.log(one);

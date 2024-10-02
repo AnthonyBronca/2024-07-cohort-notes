@@ -8,15 +8,16 @@ class DoublyLinkedListNode {
 
 class DoublyLinkedList {
   constructor() {
-    // Your code here 
+    // Your code here
   }
 
+
   addToHead(val) {
-    // Your code here 
+    // Your code here
   }
 
   addToTail(val) {
-    // Your code here 
+    // Your code here
   }
 
   // You can use this function to help debug
