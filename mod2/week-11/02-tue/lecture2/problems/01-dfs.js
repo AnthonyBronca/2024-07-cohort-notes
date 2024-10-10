@@ -37,7 +37,6 @@ b.left = d;
 b.right = e;
 c.right = f;
 
-
 /*
 
      a

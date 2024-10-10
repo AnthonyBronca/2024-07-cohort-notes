@@ -52,9 +52,24 @@ d   e     f
 
 
 const depthFirstValues = (root) => {
-    // your code here
+    const res = [];
+    const stack = [root]; // FI/LO == LI/FO
+    while(stack.length){
+        const lastEl = stack.pop(); // is an entire node
+        res.push(lastEl.val); // just push the value of the node
+        // right side first, so it is at the bottom of the stack
+        if(lastEl.right){
+            stack.push(lastEl.right);
+        }
+        // left side last, so it is at the top of the stack
+        if(lastEl.left){
+            stack.push(lastEl.left);
+        }
+    }
+    return res;
+
 }
 
 
-depthFirstValues(a);
+console.log(depthFirstValues(a));
 //    -> ['a', 'b', 'd', 'e', 'c', 'f']

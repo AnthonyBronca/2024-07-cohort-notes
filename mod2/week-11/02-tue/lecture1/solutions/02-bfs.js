@@ -40,7 +40,22 @@ c.right = f;
 
 
 const breadthFirstValues = (root) => {
-    // your code here
+    const queue = [root]; // QUEUE -> FI/FI / LI/LO
+    const res = [];
+    while(queue.length){
+        const firstInLine = queue.shift();
+        res.push(firstInLine.val);
+        if(firstInLine.left){
+            queue.push(firstInLine.left);
+        }
+        if(firstInLine.right){
+            queue.push(firstInLine.right);
+        }
+
+
+    }
+    return res;
+
 }
 
 
@@ -52,8 +67,16 @@ const breadthFirstValues = (root) => {
 d   e     f
 
 
+     50
+   /   \
+  45     60
+ / \     \
+30  47     65
+
+
+
 */
 
 
-breadthFirstValues(a);
+console.log(breadthFirstValues(a));
 //    -> ['a', 'b', 'c', 'd', 'e', 'f']

@@ -52,9 +52,31 @@ d   e     f
 
 
 const depthFirstValues = (root) => {
-    // your code here
+    // stack -> LI/FO / FI/LO
+    const stack = [root];
+    const res = [];
+    while(stack.length){
+        const currChip = stack.pop(); // remove from the end
+        res.push(currChip.val); // DO THE THING YOU WANT TO DO
+
+        if(currChip.right !== null){
+            stack.push(currChip.right); // right of the node
+
+        }
+
+        if(currChip.left !== null){
+            stack.push(currChip.left);
+        }
+
+        // currChip.left; // left of the nde
+
+    }
+
+    return res;
+
+
 }
 
 
-depthFirstValues(a);
+console.log(depthFirstValues(a));
 //    -> ['a', 'b', 'd', 'e', 'c', 'f']

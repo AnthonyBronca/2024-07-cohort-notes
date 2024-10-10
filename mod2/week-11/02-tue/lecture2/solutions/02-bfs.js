@@ -41,19 +41,34 @@ c.right = f;
 
 const breadthFirstValues = (root) => {
     // your code here
+    const res = [];
+    const queue = [root];
+    /*
+         a
+       /   \
+      b     c
+     / \     \
+    d   e     f
+
+
+    */
+    while(queue.length){
+        const curr = queue.shift();
+        res.push(curr.val); // the thing that you do
+
+        if(curr.left){
+            queue.push(curr.left);
+        }
+
+        if(curr.right){
+            queue.push(curr.right);
+        }
+    }
+    return res;
 }
 
 
-/*
-     a
-   /   \
-  b     c
- / \     \
-d   e     f
 
 
-*/
-
-
-breadthFirstValues(a);
+console.log(breadthFirstValues(a));
 //    -> ['a', 'b', 'c', 'd', 'e', 'f']
