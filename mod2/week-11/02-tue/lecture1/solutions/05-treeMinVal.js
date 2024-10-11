@@ -32,7 +32,30 @@ c.right = f;
 
 
 const treeMinValue = (root) => {
-    // YOUR CODE HERE
+    // build stack -> initialize data
+    const stack = [root];
+    // extra variables needed to solve the problem
+    let currMinVal = Infinity;
+    // always loop using a while loop base don the length of your stack/queue
+    while(stack.length){
+        let curr = stack.pop(); // remove from your data structure -> shift for queue/ pop for stack
+
+        // ---------- TO THE THING ---------
+        if(curr.val < currMinVal){
+            currMinVal = curr.val;
+        }
+        // ---------------------------------
+        if(curr.right){
+            stack.push(curr.right);
+        }
+
+        if(curr.left){
+            stack.push(curr.left);
+        }
+
+    }
+    return currMinVal;
+
 }
 
 
@@ -45,4 +68,5 @@ const treeMinValue = (root) => {
 */
 
 
-treeMinValue(a); // -> -2
+
+console.log(treeMinValue(a)); // -> -2

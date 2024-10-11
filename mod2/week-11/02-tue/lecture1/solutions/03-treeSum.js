@@ -44,6 +44,24 @@ c.right = f;
 
 const treeSum = (root) => {
     //  YOUR CODE HERE
+
+    const stack = [root];
+    let sum = 0;
+    while (stack.length) {
+        let curr = stack.pop(); // O(1)
+        if (curr) {
+            sum += curr.val;
+        }
+
+        if (curr.right) {
+            stack.push(curr.right); // O(1)
+        }
+
+        if (curr.left) {
+            stack.push(curr.left); // O(1)
+        }
+    }
+    return sum;
 }
 
-treeSum(a); // -> 21
+console.log(treeSum(a)); // -> 21

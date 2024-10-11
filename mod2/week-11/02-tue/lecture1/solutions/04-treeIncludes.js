@@ -40,10 +40,25 @@ d   e     f
 */
 
 const treeIncludes = (root, targetVal) => {
-    // YOUR CODE HERE:
+    const stack = [root];
+    while(stack.length){
+        let curr = stack.pop();
+        if(curr.val === targetVal){
+            return true;
+        }
+
+        if(curr.right){
+            stack.push(curr.right);
+        }
+
+        if(curr.left){
+            stack.push(curr.left);
+        }
+    }
+    return false;
 }
 
 
-treeIncludes(a, "e"); // -> true
-treeIncludes(a, "a"); // -> true
-treeIncludes(a, "n"); // -> false
+console.log(treeIncludes(a, "e")); // -> true
+console.log(treeIncludes(a, "a")); // -> true
+console.log(treeIncludes(a, "n")); // -> false

@@ -41,9 +41,24 @@ c.right = f;
 
 
 
-
+// TIME COMPLEXITY:
 const treeSum = (root) => {
     //  YOUR CODE HERE
+    const stack = [root];
+    let sum = 0;
+    while(stack.length){ // O(n)
+        let curr = stack.pop() // remove from the stack -> TIME COMPLEXITY: O(1) / shift -> O(n)
+        sum += curr.val;
+
+        if(curr.right){
+            stack.push(curr.right); // O(1)
+        }
+
+        if(curr.left){
+            stack.push(curr.left); // O(1)
+        }
+    }
+    return sum;
 }
 
-treeSum(a); // -> 21
+console.log(treeSum(a)); // -> 21

@@ -32,7 +32,30 @@ c.right = f;
 
 
 const treeMinValue = (root) => {
-    // YOUR CODE HERE
+    const stack = [root]; // decide if we want a stack or a queue
+
+    // declare any variables that you need to solve the problem
+    let currMinVal = Infinity;
+
+    while(stack.length){
+        let curr = stack.pop(); // remove an element, front if queue / back if stack
+
+        // ------- DO WHATEVER YOU NEED TO DO TO SOLVE WHATEVER PROBLEM YOU WANT TO SOLVE  -----
+        if(curr.val < currMinVal){
+            currMinVal = curr.val;
+        }
+        //  -----------------------
+
+        // THIS STUFF DOWN HERE IS ALMOST ALWAYS THE SAME, MAYBE WE FLIP THE ORDER THO
+        if(curr.right){
+            stack.push(curr.right);
+        }
+
+        if(curr.left){
+            stack.push(curr.left);
+        }
+    }
+    return currMinVal;
 }
 
 
@@ -45,4 +68,4 @@ const treeMinValue = (root) => {
 */
 
 
-treeMinValue(a); // -> -2
+console.log(treeMinValue(a)); // -> -2
