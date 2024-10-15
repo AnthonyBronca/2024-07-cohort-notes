@@ -47,7 +47,11 @@
 
 
 
-
+const battleshipCoords = [
+    [x,o,x],
+    [x,o,x],
+    [o,x,o],
+]
 
 
 
