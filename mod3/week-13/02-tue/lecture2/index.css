@@ -1,0 +1,88 @@
+/* Selectors id > class > tags */
+
+/* specifity: id > class > tags > bottom > top */
+
+body{
+    padding-inline: 10px;
+}
+
+h1 {
+    /*key -> formatting we want to apply : value -> value of the formatting to apply  */
+    /* color: red; */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: underline;
+    font-style: italic;
+    font-size: 36px;
+    /* pixels, refers to the amount of visible dots on a screen */
+}
+
+
+/* to grab id -> "#" */
+
+#nav-bar-container {
+    /* background-color: red; */
+    padding: 10px;
+    /* padding looks at the inside of a container */
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+    /* thickness | type | color */
+    border: 1px solid black;
+    border-radius: 10px;
+
+}
+
+/* to grab a class -> "." */
+
+.nav-bar-left {
+    font-size: 12px;
+
+}
+
+.nav-bar-right {
+    font-size: 10px;
+}
+
+/* to grab children of a selctor use the ">" */
+.nav-bar-left>span {
+    font-style: italic;
+    text-decoration: underline;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    cursor: pointer;
+}
+
+.nav-bar-right>span {
+    font-style: italic;
+    text-decoration: underline;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    cursor: pointer;
+}
+
+
+#main-article-container {
+   /* if padding is the spacing inside the container */
+   padding: 15px;
+   /* margin is the spacing outside the container */
+   /* margin: 10px; */
+   margin-top: 30px;
+   border: 1px solid black;
+   border-radius: 10px;
+
+}
+
+/* grab the child of the main-article-container listed as "h2" */
+
+#main-article-container > h2 {
+    font-size: 24px;
+    text-decoration: underline;
+    font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+
+
+/* select all the ps of the article-body use a child selector */
+ .article-body > p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+ }
