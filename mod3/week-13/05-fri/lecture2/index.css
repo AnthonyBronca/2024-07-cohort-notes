@@ -1,0 +1,55 @@
+.main-container {
+    background-color: red;
+    padding: 5%;
+
+    gap: 10px;
+
+    display: grid;
+    /* set the template */
+    grid-template-columns: repeat(3, 30%);
+    grid-template-rows: 30% 30% 30%;
+    grid-template-areas:
+    "container-1 container-4 container-7"
+    "container-5 container-2 container-8"
+    "container-3 container-6 container-9"
+    ;
+}
+
+
+.container-1{
+    background-color: blue;
+    /* assign them to their seat */
+    grid-area: container-1;
+}
+.container-2{
+    background-color: yellow;
+    grid-area: container-2;
+}
+.container-3{
+    background-color: green;
+    grid-area: container-3
+}
+.container-4{
+    background-color: purple;
+    grid-area: container-4;
+}
+.container-5{
+    background-color: pink;
+    grid-area: container-5;
+}
+.container-6{
+    background-color: brown;
+    grid-area: container-6;
+}
+.container-7{
+    background-color: magenta;
+    grid-area: container-7;
+}
+.container-8{
+    background-color: salmon;
+    grid-area: container-8;
+}
+.container-9{
+    background-color: orange;
+    grid-area: container-9;
+}

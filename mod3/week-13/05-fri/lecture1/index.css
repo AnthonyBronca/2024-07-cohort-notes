@@ -1,0 +1,54 @@
+.main-container {
+    background-color: red;
+    padding-inline: 5%;
+    padding-block: 5%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: repeat(3, 30%);
+    /* create a template of where I want to put things */
+    grid-template-areas:
+    "container1 container4 container7"
+    "container5 container2 container8"
+    "container3 container6 container9"
+    ;
+
+    gap: 10px
+
+}
+
+.container-1{
+    background-color: blue;
+    grid-area: container1;
+}
+.container-2{
+    background-color: green;
+    grid-area: container2
+}
+.container-3{
+    background-color: yellow;
+    grid-area: container3
+}
+.container-4{
+    background-color: purple;
+    grid-area: container4;
+}
+.container-5{
+    background-color: peru;
+    grid-area: container5;
+}
+.container-6{
+    background-color: violet;
+    grid-area: container6;
+}
+.container-7{
+    background-color: blanchedalmond;
+    grid-area: container7;
+}
+.container-8{
+    background-color: cyan;
+    grid-area: container8;
+}
+.container-9{
+    background-color: coral;
+    grid-area: container9;
+}

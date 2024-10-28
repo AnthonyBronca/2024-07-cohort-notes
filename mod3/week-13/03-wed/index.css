@@ -1,0 +1,15 @@
+div {
+    padding: 30px;
+    /* background-color: red; */
+    /* positioning block | flex | grid */
+    display: flex;
+
+    /* horizontal */
+    justify-content: center;
+    /* vertical */
+    align-items: flex-end;
+}
+/*
+div > p {
+    margin: 0;
+} */
