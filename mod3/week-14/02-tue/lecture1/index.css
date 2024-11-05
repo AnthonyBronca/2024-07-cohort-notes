@@ -1,0 +1,23 @@
+.select-me{
+    background-color: red;
+}
+
+.s4 {
+    visibility: hidden;
+}
+
+
+@media (min-width: 500px) and (max-width: 700px) {
+    .select-me{
+        background-color: blue;
+    }
+    .s4 {
+        visibility:visible;
+    }
+}
+
+@media (min-width: 701px){
+    .select-me{
+        background-color: green;
+    }
+}

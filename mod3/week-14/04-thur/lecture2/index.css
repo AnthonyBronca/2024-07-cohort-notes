@@ -1,0 +1,82 @@
+.car-container {
+    z-index: 2px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.car {
+    border: 1px solid black;
+    height: 200px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    z-index: 101px;
+}
+
+
+.siren-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    position: relative;
+    bottom: 10px;
+    width: 300px;
+}
+
+.left-siren {
+    background-color: black;
+    width: 50%;
+    height: 30px;
+    border-radius: 2px;
+    z-index: 200px;
+}
+
+.right-siren {
+    background-color: black;
+    width: 50%;
+    height: 30px;
+    border-radius: 2px;
+    z-index: 200px;
+}
+
+
+#button-thing{
+    transition: transform 2s;
+}
+
+#button-thing:hover{
+    border-color: red;
+    /* color: red; */
+    /* cursor: pointer; */
+    transform: rotate(360deg);
+}
+
+
+.sirens-onl{
+    animation: sirens-onl 1s infinite;
+}
+
+.sirens-onr{
+    animation: sirens-onr 1s infinite;
+
+}
+
+
+
+@keyframes sirens-onl {
+    /* 6seconds, first 3 seconds -> red. at 3 seconds im fully red  */
+    0% {background-color: blue;}
+    50% {background-color: red;}
+    100% {background-color: blue;}
+
+}
+@keyframes sirens-onr {
+    /* 6seconds, first 3 seconds -> red. at 3 seconds im fully red  */
+    0% {background-color: red;}
+    50% {background-color: blue;}
+    100% {background-color: red;}
+
+}

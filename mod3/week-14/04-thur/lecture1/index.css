@@ -1,0 +1,99 @@
+.car-container {
+    z-index: 2px;
+    height: 500px;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.car {
+    border: 1px solid black;
+    height: 200px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    z-index: 101px;
+}
+
+.siren-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    position: relative;
+    bottom: 10px;
+    width: 300px;
+}
+
+.left-siren {
+    background-color: black;
+    width: 50%;
+    height: 30px;
+    border-radius: 2px;
+    z-index: 200px;
+}
+
+.right-siren {
+    background-color: black;
+    width: 50%;
+    height: 30px;
+    border-radius: 2px;
+    z-index: 200px;
+}
+
+.tallah-demo:hover{
+    cursor: pointer;
+    border: 1px solid red;
+    color: red;
+}
+
+#button-thing {
+    /* animation here */
+    transition: transform 2s;
+
+}
+
+#button-thing:hover {
+    /* background-color: red; */
+    transform: rotate(360deg);
+    border-color: red;
+    color: red
+}
+
+.sirens-onr {
+    animation: sirens-onr 1s infinite;
+}
+
+.sirens-onl {
+    animation: sirens-onl 1s infinite;
+}
+
+
+@keyframes sirens-onr {
+    0% {
+        background-color: blue;
+    }
+
+    50% {
+        background-color: red;
+    }
+
+    100% {
+        background-color: blue;
+    }
+
+}
+
+@keyframes sirens-onl {
+    0% {
+        background-color: red;
+    }
+    50% {
+        background-color: blue;
+    }
+    100% {
+        background-color: red;
+    }
+}
