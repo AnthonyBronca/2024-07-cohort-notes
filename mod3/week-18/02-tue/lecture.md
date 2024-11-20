@@ -113,4 +113,6 @@ Then, we can add a listener on this button, specifically to listen for the click
 
 Inside of the eventListener, we can execute any code we may want to do.
 
-We will be tying this in with other selectors to manage a list
+We will be tying this in with other selectors to manage a list.
+
+To see other ways for how we tie all this in together, please reference the code we did in class found in the `lecture` directory.
