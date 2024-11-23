@@ -117,6 +117,42 @@ async function getData(){
     return data; // or whatever key you need
 }
 
+```
 
+
+## Connecting JavaScript to HTML
+
+The HTML needs a `<script>` tag with a `src` attribute pointing to the relative path of whatever JS file we want to use.
+
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+<script src="<relative path to javascript file>"></script>
+</html>
+
+```
+
+
+After you have that, you need to wait for all the `DOM` elements to be loaded on the `JS` side:
+
+
+```js
+// P.S you can technically make this thing async, try to figure that out in the future, or not.
+window.addEventListener("DOMContentLoaded", () => {
+
+    // your code here
+
+
+
+})
 
 ```
