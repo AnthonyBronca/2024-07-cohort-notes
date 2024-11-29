@@ -1,0 +1,19 @@
+.span-container{
+    background-color: red;
+    height: 100px;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+#span-1{
+    background-color: blue;
+}
+#span-2{
+    background-color: green;
+}
+#span-3{
+    background-color: yellow;
+}
+#span-4{
+    background-color: orange;
+}

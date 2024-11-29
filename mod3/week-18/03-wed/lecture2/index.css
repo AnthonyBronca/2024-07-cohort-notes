@@ -1,0 +1,55 @@
+.span-container{
+    background-color: red;
+    height: 150px;
+    border: 1px solid black;
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#span-1{
+    background-color: blue;
+    height: 30px;
+    width: 75px;
+}
+#span-2{
+    background-color: green;
+    height: 30px;
+    width: 75px;
+}
+#span-3{
+    background-color: purple;
+    height: 30px;
+    width: 75px;
+}
+#span-4{
+    background-color: yellow;
+    height: 30px;
+    width: 75px;
+}
+#span-5{
+    background-color: white;
+    height: 30px;
+    width: 75px;
+}
+#span-6{
+    background-color: grey;
+    height: 30px;
+    width: 75px;
+}
+#span-7{
+    background-color: brown;
+    height: 30px;
+    width: 75px;
+}
+#span-8{
+    background-color: orange;
+    height: 30px;
+    width: 75px;
+}
+#span-9{
+    background-color: pink;
+    height: 30px;
+    width: 75px;
+}
