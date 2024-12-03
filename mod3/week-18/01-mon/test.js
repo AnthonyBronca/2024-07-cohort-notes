@@ -1,3 +1,4 @@
+// how do we hook up js to html
 window.addEventListener("DOMContentLoaded", ()=> {
 
     // GLOBAL
@@ -6,46 +7,41 @@ window.addEventListener("DOMContentLoaded", ()=> {
     }
 
 
-
     // SELECTORS
-    // grab the background btn
     const backgroundBtn = document.getElementById("background-btn");
-    const addCookieBtn = document.getElementById("cookie-set-btn");
-    const deleteCookieBtn = document.getElementById("delete-cookie-btn");
+    // const backgroundBtn = document.querySelector("#background-btn");
+    const cookieBtn = document.getElementById("cookie-set-btn");
+    const deleteBtn = document.getElementById("delete-cookie-btn");
     const body = document.body;
 
-    // const backgroundBtn = document.querySelector("#background-btn")
 
+    // Event Listeners
 
-    // EVENT LISTENERS
+    // create a listener
     backgroundBtn.addEventListener("click", ()=> {
-        // how do we add the class of dark-mode to the body
+
+        // add the "dark-mode" class to the "body" selected item
         if(body.className === "dark-mode"){
-            body.className = "light-mode";
-        } else {
-            body.className = "dark-mode";
+            body.className  = "light-mode";
+        } else{
+            body.className  = "dark-mode";
         }
 
-
-        // set a storage
+        // save the class value inside of the session storage bucket
         sessionStorage.setItem("theme", body.className)
 
     })
 
-
-    addCookieBtn.addEventListener("click", ()=> {
+    cookieBtn.addEventListener("click", ()=> {
         const inputField = document.getElementById("cookie-setter");
-        // console.log(inputField);
-        document.cookie = `estCookie=${inputField.value}`;
+        document.cookie = `pstCookie=${inputField.value}; expires= Thu, 01 Jan 2025 00:00:00 GMT`;
+
         inputField.value = "";
     })
 
 
-    deleteCookieBtn.addEventListener("click", ()=> {
-
-
-        document.cookie = `estCookie=; expires = Thu, Jan 01 1970 00:00:00 GMT`;
-
+    deleteBtn.addEventListener("click", ()=> {
+        document.cookie = "pstCookie=Happy Thanksgiving!; expires= Thu, 01 Jan 1970 00:00:00 GMT";
     })
 
 
