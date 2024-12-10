@@ -1,0 +1,14 @@
+{
+  "name": "lecture2",
+  "version": "1.0.0",
+  "main": "scratch.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon scratch.js",
+    "train": "echo 'hii class how are you' "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

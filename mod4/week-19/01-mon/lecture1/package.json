@@ -1,0 +1,12 @@
+{
+  "name": "lecture1",
+  "version": "1.0.0",
+  "main": "scratch.js",
+  "scripts": {
+   "start": "nodemon scratch.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
