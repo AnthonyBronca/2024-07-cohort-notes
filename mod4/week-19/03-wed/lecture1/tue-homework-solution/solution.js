@@ -51,7 +51,5 @@ app.post("/users", checkBodyMiddleWare, (req, res, next) => {
 
 
 
-
-
 const port = 8000;
 app.listen(port, ()=> console.log("listening on port ", port));
