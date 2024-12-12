@@ -379,3 +379,13 @@ Here I created a 2nd err middle ware so that we can showcase that the `next(err)
 - Making one that will add to some internal facing database for metric handling to see where which parts of code encounter the most amount of errors, how long they take to resolve, etc.
 
 You can really do a lot with both Middle-Wares and Error Handling Middle-Wares. It is entirely up to you and your team how you want this to work, because at the end of the day they are JUST FUNCTIONS and we simply control the data flow.
+
+
+
+## Accountability Group Homework
+
+Homework due 12/12/2024
+
+Using the homework you completed for 02-Tue, refactor the code to be able to use `error handling middle-ware`. The error handling middle ware should work when we create a post that has invalid data (we previously handled invalid phone numbers and name lengths). These errors should now go to the error handling middleware, the message should be sent to the client along with a 400 status code.
+
+HINT: Remember to plug your error handling middle ware globally
