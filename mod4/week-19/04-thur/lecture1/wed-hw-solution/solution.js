@@ -10,7 +10,7 @@ const users = [];
 // middlewares
 const checkBodyMiddleWare = (req, _res, next) => {
     const { name, phone } = req.body;
-    if (!name || !phone) {
+    if (!name && !phone) {
         // console.log("We hit an error"); // error handling
         throw new Error("You must pass in a valid name AND phone key")
     } else {

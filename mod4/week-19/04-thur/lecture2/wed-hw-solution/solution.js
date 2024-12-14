@@ -38,7 +38,6 @@ app.get("/users", (_req, res, next) => {
 
 app.post("/users", bodyValidationMiddleWare, (req, res, next) => {
     try{
-
         const { name, phone } = req.body;
         const newUser = { name, phone };
         users.push(newUser);
