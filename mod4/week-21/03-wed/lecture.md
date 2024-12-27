@@ -200,3 +200,13 @@ To undo seeders you can do:
 ```
 npx dotenv sequelize db:seed:undo:all
 ```
+
+
+At this point, we can use the `sqlite3` shell to see our data using a `SELECT * FROM users;` query
+You should see something like
+
+| id | firstName |    username    |      createdAt      |      updatedAt      |
+|--- | --------- | -------------- | ------------------- | ------------------- |
+| 1  | anthony   | anthonybronca  | 2024-12-27 05:06:41 | 2024-12-27 05:06:41 |
+| 2  | edward    | edwardfelipe   | 2024-12-27 05:06:41 | 2024-12-27 05:06:41 |
+| 3  | alexi     | alexibettinger | 2024-12-27 05:06:41 | 2024-12-27 05:06:41 |
