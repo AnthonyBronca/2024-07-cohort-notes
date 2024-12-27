@@ -279,6 +279,7 @@ We can now change the file to have additional `Constraints`:
 
 ```js
 // 01-users.js (renamed migration)
+
 'use strict';
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
@@ -291,23 +292,20 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       firstName: {
-        type: Sequelize.STRING(30),
-        allowNull: false
+        type: Sequelize.STRING
       },
       username: {
-        type: Sequelize.STRING(20),
-        allowNull: false,
-        unique: true
+        type: Sequelize.STRING
       },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE,
-        defaultValue: Sequelize.DATATYPES.NOW
+        defaultValue: Sequelize.literal('CURRENT_TIMESTAMP') // allows us to not have to make a date on creation
       },
       updatedAt: {
         allowNull: false,
         type: Sequelize.DATE,
-        defaultValue: Sequelize.DATATYPES.NOW
+        defaultValue: Sequelize.literal('CURRENT_TIMESTAMP') // allows us to not have to pass in an updated date on creation
       }
     });
   },
@@ -315,6 +313,7 @@ module.exports = {
     await queryInterface.dropTable('Users');
   }
 };
+
 
 ```
 
