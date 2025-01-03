@@ -90,7 +90,7 @@ Now that we have that model, we can use it when querying data later. For now, we
 Seeders, in our applications, will be used to inject dummy data into the database. If you look inside your `seeders` folder though, it is probably empty! Just like when we created the `migrations` we were able to use the terminal to create files and pre-load the boilerplate code, we can do the same here:
 
 ```
-npx sequelize generate:seed --name User
+npx sequelize seed:generate --name User
 ```
 
 This will create a seeder file in your `/db/seeders` folder. Notice it has that really long file name. I will be renaming that to `01-users.js` as well
