@@ -1,0 +1,16 @@
+
+.navContainer{
+    background-color: rgba(80,80,80, .4);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 2.5rem;
+    border-radius: 5px;
+    margin-inline: 2rem;
+    margin-top: 1rem;
+
+}
+
+.navLink {
+    color: white;
+}
