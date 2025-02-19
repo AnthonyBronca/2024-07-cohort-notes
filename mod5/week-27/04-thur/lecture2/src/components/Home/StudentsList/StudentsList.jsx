@@ -1,6 +1,5 @@
 import React from 'react';
 import './index.css';
-import students from './students';
 import { useNavigate } from 'react-router-dom';
 /*
    {
@@ -13,9 +12,10 @@ import { useNavigate } from 'react-router-dom';
 */
 
 
-const StudentsList = () => {
+const StudentsList = ({students}) => {
 
     const navigate = useNavigate();
+
 
     const goToStudentPage = (studentName) => {
         navigate(`/students/${studentName}`)

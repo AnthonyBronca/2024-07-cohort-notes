@@ -4,6 +4,7 @@ import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 import Home from './components/Home'
 import AddStudentForm from './components/AddStudentForm'
 import StudentDetail from './components/StudentDetail'
+import NavBar from './components/NavBar'
 
 const router = createBrowserRouter([
   {
@@ -20,12 +21,19 @@ const router = createBrowserRouter([
   },
   {
     path: "/about",
-    element: <h1>LOL you thought we had an about page!!</h1>
+    element:
+    <>
+    <NavBar />
+    <h1>LOL you thought we had an about page!!</h1>
+
+    </>
   },
 ])
 
 
 function App() {
+
+
 
   return <RouterProvider router={router} />
 }

@@ -13,7 +13,7 @@ A single student looks like
 */
 
 
-const StudentsList = () => {
+const StudentsList = ({students}) => {
     // students is an array of student objects
 
     const navigate = useNavigate();
