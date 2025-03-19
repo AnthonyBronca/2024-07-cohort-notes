@@ -20,7 +20,7 @@ Example:
     // THIS IS A FUNCTION IN CHARGE OF BRIDGING OUR FRONTEND AND BACKEND
 export const getAllTweetsThunk = () => async (dispatch) => {
     try {
-        const res = await fetch("/api/tweets"); // <- takes us to step 4
+        const res = await csrfFetch("/api/tweets/"); // <- takes us to step 4
         if(res.ok){
             // The point of step 5 is to prepare our data from the backend to be stored (cached)
             //we only have data, when the we WAIT for the readable to stream to be read
