@@ -131,10 +131,11 @@ function tweetsReducer (state = initialState, action){
                 newState.allTweets = action.payload; // O(1) time ;)
 
                 // add our data into the normalized byIds
-
+                let newById = {};
                 for(let tweet of action.payload){
-                    newState.byId[tweet.id] = tweet; // adds a tweet using it's unique id as a key
+                    newById[tweet.id] = tweet; // adds a tweet using it's unique id as a key
                 }
+                newState.byId = newById; // update the address of our byId object
 
                 return newstate;
             return newState;
