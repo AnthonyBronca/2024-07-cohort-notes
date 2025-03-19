@@ -126,9 +126,9 @@ function tweetsReducer (state = initialState, action){
     switch(action.type){
         case GET_ALL_TWEETS:
                 newState = {...state}; // spread out the old data to make a clone of the state
-
+                const tweets = action.payload; // if our payload is an array of tweets.
                 // add our data into the normalized allTweets
-                newState.allTweets = action.payload; // O(1) time ;)
+                newState.allTweets = tweets; // O(1) time ;)
 
                 // add our data into the normalized byIds
                 let newById = {};
