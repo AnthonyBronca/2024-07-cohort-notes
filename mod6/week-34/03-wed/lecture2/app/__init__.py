@@ -3,12 +3,15 @@ from models import User, Bank
 
 anthony = User("Anthony")
 bank1 = Bank(100)
-anthony.bank = bank1
-print(anthony)
+
+anthony.bank = bank1  # anthony class now has the bank
+# print(anthony)
+# print(bank1)
 bank1.change_pin()
-# print(bank1.pin)
+print(bank1.pin, " . . Your new pin is this")
 bank1.withdraw(7)
-print(anthony)
+print(bank1)
+
 # target = Store("Target")
 # cart1 = Cart()
 # target.get_store()
