@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Person</title>
+</head>
+<body>
+    <h1>Sign Up ☺️ </h1>
+
+    <form action="/forms" method="post">
+        {{ form.csrf_token }}
+        {{ form.hidden_tag() }}
+        <div>
+            <span>{{ form.name.label }}</span>
+            {{ form.name() }}
+        </div>
+        <div>
+            <span>{{ form.password.label }}</span>
+            {{ form.password() }}
+        </div>
+        <!-- <div>
+            <span>{{ form.birth_date.label }}</span>
+            {{ form.birth_date() }}
+        </div> -->
+
+        <div>
+            {{ form.submit() }}
+        </div>
+        <!-- <label>
+            Name
+            <input />
+        </label> -->
+    </form>
+
+
+</body>
+</html>
