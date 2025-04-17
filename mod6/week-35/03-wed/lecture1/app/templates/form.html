@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask + Jinja</title>
+</head>
+<body>
+
+    <h1>Create a new user</h1>
+    <form action="/forms" method="post">
+        {{ form.csrf_token }}
+        {{ form.hidden_tag() }}
+        <span>{{ form.name.label }}</span>
+        {{ form.name() }}
+        <span>{{ form.password.label }}</span>
+        {{ form.password() }}
+
+        <div>
+            {{form.submit()}}
+        </div>
+
+    </form>
+
+
+</body>
+</html>

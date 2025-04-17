@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=`, initial-scale=1.0">
+    <title>{{ site_info.title }}</title>
+</head>
+<body>
+    <h1>{{ site_info.header }}</h1>
+
+    <ul>
+      {% for name in site_info.names %}
+      <li>{{ name }}</li>
+      {% endfor %}
+    </ul>
+    <a href="/forms">Add new person</a>
+</body>
+</html>
