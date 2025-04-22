@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask Demo</title>
+</head>
+<body>
+
+    <h1>{{ header }}</h1>
+
+    <!-- render each student on a new line (p tag) -->
+    {% for name in students  %}
+    <p>{{ name }}</p>
+    {% endfor %}
+
+    <!-- have a stoppage -->
+
+</body>
+</html>

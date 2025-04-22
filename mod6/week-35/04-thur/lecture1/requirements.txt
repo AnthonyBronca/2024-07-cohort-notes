@@ -1,0 +1,4 @@
+flask
+python-dotenv
+Flask-WTF
+Jinja2
