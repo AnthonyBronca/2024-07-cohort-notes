@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tweeter Est</title>
+</head>
+
+<body>
+    <h1>Tweeter EST</h1>
+    {% for tweet in tweets %}
+    <p>{{ tweet.body }}</p>
+    {% endfor %}
+</body>
+
+</html>
